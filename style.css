@@ -1,63 +1,54 @@
-/* Fancy Styles for Mohammad Shakiba's GitHub Page */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 
-/* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    text-align: center;
-    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background: #f8f9fa;
+    color: #333;
 }
 
-.container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
+h1, h2, h3 {
+    color: #222;
 }
 
-h1 {
-    font-size: 3em;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-p {
-    font-size: 1.2em;
-    margin: 20px 0;
-}
-
-/* Links and Buttons */
-.links a {
-    display: inline-block;
-    margin: 15px;
-    padding: 12px 25px;
-    color: white;
-    background: rgba(255, 255, 255, 0.2);
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    border: 2px solid white;
-}
-
-.links a:hover {
+.img-fluid {
+    max-width: 90%;
+    height: auto;
+    border: 5px solid #ddd;
+    padding: 5px;
     background: white;
-    color: #2575fc;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    .container {
-        width: 90%;
-        padding: 20px;
-    }
-    h1 {
-        font-size: 2.5em;
-    }
+.list-group-item {
+    background: #e9ecef;
+    border: none;
+    font-size: 1.1em;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Code Block Styling */
+pre code {
+    display: block;
+    background: #2d2d2d; /* Dark background */
+    color: #ffffff; /* Light text */
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: "Courier New", monospace;
+    overflow-x: auto; /* Enable scrolling for long lines */
 }
 
